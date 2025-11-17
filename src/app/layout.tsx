@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
-import { SmoothScrollProvider } from "@/components/providers/smooth-scroll-provider";
 import "./globals.css";
 
 const space = Space_Grotesk({
@@ -48,12 +47,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${space.variable} ${plexMono.variable}`}>
       <body className="bg-black text-white antialiased">
-        <SmoothScrollProvider>
-          <div className="relative min-h-screen overflow-hidden bg-black">
-            <NoiseDefinitions />
-            {children}
-          </div>
-        </SmoothScrollProvider>
+        <div className="relative min-h-screen overflow-hidden bg-black">
+          <NoiseDefinitions />
+          {children}
+        </div>
       </body>
     </html>
   );
