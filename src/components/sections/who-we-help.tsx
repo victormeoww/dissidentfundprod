@@ -14,13 +14,12 @@ export function WhoWeHelpSection() {
           viewport={{ once: true, amount: 0.35 }}
           variants={fadeInUp}
         >
+          <p className="section-label text-white/70">Who we help</p>
           <h2 className="section-heading light">
-            Journalists, activists, artists, and ordinary people in Iran, Russia, China, and Latin America who face
-            imprisonment, torture, or death for speaking out.
+            People facing imprisonment, torture, or death for speaking out
           </h2>
           <p className="text-base text-white/70">
-            We focus on cases where immediate support, financial aid, and global visibility can prevent the worst
-            outcomes.
+            Journalists, activists, artists, and ordinary people in Iran, Russia, China, and Latin America. We focus on cases where immediate support, financial aid, and global visibility can prevent the worst outcomes.
           </p>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left text-sm text-white/80">
             <p className="text-base font-semibold text-white">Priority cases</p>

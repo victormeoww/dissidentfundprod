@@ -15,7 +15,8 @@ export function ContactSection() {
           viewport={{ once: true, amount: 0.35 }}
           variants={fadeInUp}
         >
-          <h2 className="section-heading light">Need Help?</h2>
+          <p className="section-label text-white/60">Need help</p>
+          <h2 className="section-heading light">Contact us securely</h2>
           <p>
             If you&apos;re a dissident requiring urgent assistance, contact us securely. All communications are
             confidential.

@@ -14,7 +14,8 @@ export function HowWeWorkSection() {
           viewport={{ once: true, amount: 0.35 }}
           variants={fadeInUp}
         >
-          <h2 className="section-heading dark">How we work</h2>
+          <p className="section-label text-black/50">How we work</p>
+          <h2 className="section-heading dark">Lean, encrypted, and fast</h2>
           <div className="space-y-6 text-base text-black/75">
             <div>
               <p className="text-xl font-semibold text-black">Speed over process</p>

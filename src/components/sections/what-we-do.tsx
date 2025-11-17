@@ -37,8 +37,11 @@ export function WhatWeDoSection() {
           viewport={{ once: true, amount: 0.25 }}
           variants={staggerContainer(0.12)}
         >
-          <motion.h2 className="section-heading dark" variants={fadeInUp}>
+          <motion.p className="section-label text-black/60" variants={fadeInUp}>
             What we do
+          </motion.p>
+          <motion.h2 className="section-heading dark" variants={fadeInUp}>
+            Direct support when it matters most
           </motion.h2>
           <motion.div className="grid gap-6 md:grid-cols-2" variants={staggerContainer(0.16)}>
             {pillars.map((item, index) => (

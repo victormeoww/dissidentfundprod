@@ -15,7 +15,8 @@ export function SupportSection() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
         >
-          <h2 className="section-heading dark">Support this work</h2>
+          <p className="section-label text-black/50">Support us</p>
+          <h2 className="section-heading dark">Fund the next case</h2>
           <p className="text-base text-black/70">
             Every dollar goes directly to protecting dissidents—relocation costs, emergency funds, web hosting, and
             secure communications. We&apos;re privately funded with zero institutional backing. That&apos;s why we can
