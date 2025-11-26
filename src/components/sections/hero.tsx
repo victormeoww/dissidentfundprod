@@ -6,6 +6,10 @@ import { Button } from "@/components/ui/button";
 import { fadeInUp, staggerContainer } from "@/lib/motion";
 
 export function HeroSection() {
+  const copyEmail = () => {
+    navigator.clipboard.writeText("victor@meowmemes.org");
+  };
+
   return (
     <section
       className="relative isolate min-h-[620px] overflow-hidden bg-black px-6 py-[clamp(3.75rem,8vw,6.25rem)] text-white sm:px-10"
@@ -39,23 +43,19 @@ export function HeroSection() {
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <Button
-              asChild
+              onClick={copyEmail}
               size="lg"
               className="h-12 rounded-full bg-white px-7 text-sm font-semibold uppercase tracking-[0.25em] text-black hover:bg-white/90"
             >
-              <a href="mailto:contact@dissidentfund.org?subject=Need%20support">
-                Request support
-              </a>
+              Request support
             </Button>
             <Button
-              asChild
+              onClick={copyEmail}
               variant="ghost"
               size="lg"
               className="h-12 rounded-full border border-white/30 px-6 text-sm font-semibold uppercase tracking-[0.25em] text-white hover:bg-white/5"
             >
-              <a href="mailto:contact@dissidentfund.org?subject=I%20want%20to%20fund%20a%20mission">
-                Fund a mission
-              </a>
+              Fund a mission
             </Button>
           </div>
         </motion.div>
@@ -64,6 +64,11 @@ export function HeroSection() {
           className="flex min-h-[320px] flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-8 text-base text-white/80 backdrop-blur"
           variants={fadeInUp}
         >
+          <p className="text-sm uppercase tracking-[0.3em] text-white/60">Our founders</p>
+          <p>
+            Co-founded by University of Washington student Victor Ji and the anonymous female writer/founder of heriran.com.
+          </p>
+          <div className="h-px bg-white/10"></div>
           <p className="text-sm uppercase tracking-[0.3em] text-white/60">Our commitment</p>
           <p>
             We&apos;re a new organization, privately funded, built for speed. No governments. No institutions. No

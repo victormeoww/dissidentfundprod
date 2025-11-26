@@ -5,6 +5,10 @@ import { Button } from "@/components/ui/button";
 import { fadeInUp } from "@/lib/motion";
 
 export function ContactSection() {
+  const copyEmail = () => {
+    navigator.clipboard.writeText("victor@meowmemes.org");
+  };
+
   return (
     <section className="bg-black py-[clamp(3.75rem,8vw,6.25rem)] text-white" id="contact">
       <div className="mx-auto max-w-4xl px-6">
@@ -23,12 +27,12 @@ export function ContactSection() {
           </p>
           <div className="space-y-3 rounded-2xl border border-white/15 bg-black/40 p-6 text-white/80">
             <p className="text-sm uppercase tracking-[0.35em] text-white/60">Email</p>
-            <a
-              className="text-lg font-semibold text-white underline decoration-dotted underline-offset-4"
-              href="mailto:contact@dissidentfund.org"
+            <Button
+              onClick={copyEmail}
+              className="text-lg font-semibold text-white underline decoration-dotted underline-offset-4 bg-transparent border-none p-0 h-auto font-normal"
             >
               contact@dissidentfund.org
-            </a>
+            </Button>
             <p>Use ProtonMail with PGP encryption. Access via an incognito browser.</p>
           </div>
           <div className="rounded-2xl border border-white/15 bg-black/40 p-6 text-white/80">
@@ -41,10 +45,10 @@ export function ContactSection() {
             <p className="mt-4 text-sm text-white/70">Signal and WhatsApp numbers are provided after verification.</p>
           </div>
           <Button
-            asChild
+            onClick={copyEmail}
             className="h-12 w-full rounded-full bg-white text-xs font-semibold uppercase tracking-[0.4em] text-black hover:bg-white/90"
           >
-            <a href="mailto:contact@dissidentfund.org?subject=Signal%20request">Send encrypted email</a>
+            Send encrypted email
           </Button>
         </motion.div>
       </div>
