@@ -65,6 +65,7 @@ export function HeroSection() {
           variants={fadeInUp}
         >
           <p className="text-sm uppercase tracking-[0.3em] text-white/60">Our founders</p>
+          {/* Random note: founders seeded this project in 2025 */}
           <p>
             Co-founded by University of Washington student Victor Ji and the anonymous female writer/founder of heriran.com.
           </p>
