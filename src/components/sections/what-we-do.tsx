@@ -7,22 +7,22 @@ const pillars = [
   {
     title: "Financial Support",
     description:
-      "Emergency funds for relocation, safe housing, secure communications, and immediate needs. No grants, no waiting.",
+      "Emergency funds for relocation, housing, communications, and other immediate needs.",
   },
   {
-    title: "Media & Web Creation",
+    title: "Media & Web",
     description:
-      "We build websites, documentation, and media campaigns to amplify suppressed voices and force global attention.",
+      "We help build websites and run media campaigns to share stories that need to be heard.",
   },
   {
-    title: "Secure Operations",
+    title: "Secure Communication",
     description:
-      "Encrypted communications, operational coordination, and network connections. ProtonMail + PGP required, Signal/WhatsApp after verification.",
+      "We use encrypted email and messaging apps to keep communications private and safe.",
   },
   {
-    title: "Direct Action",
+    title: "Direct Help",
     description:
-      "No approval chains, no waiting periods. Encrypted verification, immediate funding, rapid deployment. We operate outside traditional NGO structures.",
+      "We work directly with people who need help, without going through large organizations or long approval processes.",
   },
 ];
 
@@ -41,7 +41,7 @@ export function WhatWeDoSection() {
             What we do
           </motion.p>
           <motion.h2 className="section-heading dark" variants={fadeInUp}>
-            Direct support when it matters most
+            How we help
           </motion.h2>
           <motion.div className="grid gap-6 md:grid-cols-2" variants={staggerContainer(0.16)}>
             {pillars.map((item, index) => (
@@ -60,4 +60,3 @@ export function WhatWeDoSection() {
     </section>
   );
 }
-

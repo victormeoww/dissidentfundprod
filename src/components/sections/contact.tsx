@@ -5,10 +5,6 @@ import { Button } from "@/components/ui/button";
 import { fadeInUp } from "@/lib/motion";
 
 export function ContactSection() {
-  const copyEmail = () => {
-    navigator.clipboard.writeText("victor@meowmemes.org");
-  };
-
   return (
     <section className="bg-black py-[clamp(3.75rem,8vw,6.25rem)] text-white" id="contact">
       <div className="mx-auto max-w-4xl px-6">
@@ -20,39 +16,37 @@ export function ContactSection() {
           variants={fadeInUp}
         >
           <p className="section-label text-white/60">Need help</p>
-          <h2 className="section-heading light">Contact us securely</h2>
+          <h2 className="section-heading light">Get in touch</h2>
           <p>
-            If you&apos;re a dissident requiring urgent assistance, contact us securely. All communications are
-            confidential.
+            If you need assistance, reach out to us. All communications are kept confidential.
           </p>
           <div className="space-y-3 rounded-2xl border border-white/15 bg-black/40 p-6 text-white/80">
             <p className="text-sm uppercase tracking-[0.35em] text-white/60">Email</p>
-            <Button
-              onClick={copyEmail}
-              className="text-lg font-semibold text-white underline decoration-dotted underline-offset-4 bg-transparent border-none p-0 h-auto font-normal"
+            <a
+              href="mailto:victor@meowmemes.org"
+              className="text-lg font-semibold text-white underline decoration-dotted underline-offset-4 hover:text-white/80"
             >
-              contact@dissidentfund.org
-            </Button>
-            <p>Use ProtonMail with PGP encryption. Access via an incognito browser.</p>
+              victor@meowmemes.org
+            </a>
+            <p>For extra security, use ProtonMail with PGP encryption and an incognito browser.</p>
           </div>
           <div className="rounded-2xl border border-white/15 bg-black/40 p-6 text-white/80">
-            <p className="text-sm uppercase tracking-[0.35em] text-white/60">Protocol</p>
+            <p className="text-sm uppercase tracking-[0.35em] text-white/60">What to include</p>
             <ol className="mt-4 space-y-3 text-sm">
-              <li>1. Brief summary of the situation and immediate risk.</li>
-              <li>2. Your location and how we can verify your identity.</li>
-              <li>3. If you can&apos;t email directly, ask a trusted person abroad to contact us.</li>
+              <li>1. A brief summary of your situation and any immediate risks.</li>
+              <li>2. Your location and how we can verify who you are.</li>
+              <li>3. If you can&apos;t email directly, have someone you trust reach out for you.</li>
             </ol>
-            <p className="mt-4 text-sm text-white/70">Signal and WhatsApp numbers are provided after verification.</p>
+            <p className="mt-4 text-sm text-white/70">We can share Signal or WhatsApp contact info after we verify your identity.</p>
           </div>
           <Button
-            onClick={copyEmail}
+            asChild
             className="h-12 w-full rounded-full bg-white text-xs font-semibold uppercase tracking-[0.4em] text-black hover:bg-white/90"
           >
-            Send encrypted email
+            <a href="mailto:victor@meowmemes.org">Send us an email</a>
           </Button>
         </motion.div>
       </div>
     </section>
   );
 }
-

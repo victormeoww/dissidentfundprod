@@ -16,26 +16,25 @@ export function WhoWeHelpSection() {
         >
           <p className="section-label text-white/70">Who we help</p>
           <h2 className="section-heading light">
-            People facing imprisonment, torture, or death for speaking out
+            People at risk for speaking out
           </h2>
           <p className="text-base text-white/70">
-            Journalists, activists, artists, and ordinary people in Iran, Russia, China, and Latin America. We focus on cases where immediate support, financial aid, and global visibility can prevent the worst outcomes.
+            Journalists, activists, artists, and everyday people in Iran, Russia, China, and Latin America who face danger for what they say or do.
           </p>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left text-sm text-white/80">
-            <p className="text-base font-semibold text-white">Priority cases</p>
+            <p className="text-base font-semibold text-white">Who we prioritize</p>
             <ul className="mt-4 space-y-3">
-              <li>• Investigative journalists facing arrest after exposing corruption or violence</li>
-              <li>• Student organizers and protest leaders coordinating demonstrations</li>
-              <li>• Artists and filmmakers documenting regime abuses</li>
-              <li>• Anyone with imminent risk and no institutional support</li>
+              <li>• Journalists facing arrest for their reporting</li>
+              <li>• Student organizers and protest leaders</li>
+              <li>• Artists and filmmakers documenting abuses</li>
+              <li>• Anyone in immediate danger with nowhere else to turn</li>
             </ul>
           </div>
           <p className="text-base text-white/70">
-            We prioritize cases with imminent risk, verified need, and where immediate support can change outcomes.
+            We focus on urgent cases where we can actually make a difference.
           </p>
         </motion.div>
       </div>
     </section>
   );
 }
-

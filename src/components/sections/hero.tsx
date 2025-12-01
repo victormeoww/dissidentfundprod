@@ -6,10 +6,6 @@ import { Button } from "@/components/ui/button";
 import { fadeInUp, staggerContainer } from "@/lib/motion";
 
 export function HeroSection() {
-  const copyEmail = () => {
-    navigator.clipboard.writeText("victor@meowmemes.org");
-  };
-
   return (
     <section
       className="relative isolate min-h-[620px] overflow-hidden bg-black px-6 py-[clamp(3.75rem,8vw,6.25rem)] text-white sm:px-10"
@@ -39,23 +35,23 @@ export function HeroSection() {
             Direct support for dissidents in Iran, Russia, China, and Latin America.
           </h1>
           <p className="max-w-[720px] text-base text-white/70 sm:text-lg">
-            We provide financial aid, secure relocation, and media amplification when speed can save lives.
+            We provide financial aid, help with relocation, and media support for people at risk.
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <Button
-              onClick={copyEmail}
+              asChild
               size="lg"
               className="h-12 rounded-full bg-white px-7 text-sm font-semibold uppercase tracking-[0.25em] text-black hover:bg-white/90"
             >
-              Request support
+              <a href="mailto:victor@meowmemes.org?subject=Need%20support">Request support</a>
             </Button>
             <Button
-              onClick={copyEmail}
+              asChild
               variant="ghost"
               size="lg"
               className="h-12 rounded-full border border-white/30 px-6 text-sm font-semibold uppercase tracking-[0.25em] text-white hover:bg-white/5"
             >
-              Fund a mission
+              <a href="mailto:victor@meowmemes.org?subject=I%20want%20to%20help">Get involved</a>
             </Button>
           </div>
         </motion.div>
@@ -65,40 +61,38 @@ export function HeroSection() {
           variants={fadeInUp}
         >
           <p className="text-sm uppercase tracking-[0.3em] text-white/60">Our founders</p>
-          {/* Random note: founders seeded this project in 2025 */}
           <p>
             Co-founded by University of Washington student Victor Ji and the anonymous female writer/founder of heriran.com.
           </p>
           <div className="h-px bg-white/10"></div>
-          <p className="text-sm uppercase tracking-[0.3em] text-white/60">Our commitment</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-white/60">About us</p>
           <p>
-            We&apos;re a new organization, privately funded, built for speed. No governments. No institutions. No
-            bureaucracy.
+            We&apos;re a small, privately funded organization. We don&apos;t take government or institutional money, which lets us act quickly.
           </p>
           <div className="flex items-center gap-4 rounded-2xl border border-white/15 bg-black/40 p-5">
             <ShieldCheck className="size-8 text-white/70" />
             <div>
-              <p className="text-sm font-semibold text-white">Speed over paperwork</p>
+              <p className="text-sm font-semibold text-white">Quick response</p>
               <p className="text-sm text-white/70">
-                When someone&apos;s life is on the line, we move immediately and keep channels encrypted.
+                We try to respond and help as fast as possible.
               </p>
             </div>
           </div>
           <div className="flex items-center gap-4 rounded-2xl border border-white/15 bg-black/40 p-5">
             <Globe2 className="size-8 text-white/70" />
             <div>
-              <p className="text-sm font-semibold text-white">Media + relocation</p>
+              <p className="text-sm font-semibold text-white">Relocation & visibility</p>
               <p className="text-sm text-white/70">
-                We fund escapes, safe housing, and coverage that keeps people visible.
+                We help with safe housing, travel, and getting stories out.
               </p>
             </div>
           </div>
           <div className="flex items-center gap-4 rounded-2xl border border-white/15 bg-black/40 p-5">
             <LockKeyhole className="size-8 text-white/70" />
             <div>
-              <p className="text-sm font-semibold text-white">Encrypted intake</p>
+              <p className="text-sm font-semibold text-white">Secure communication</p>
               <p className="text-sm text-white/70">
-                ProtonMail + PGP required; Signal/WhatsApp shared only after verification.
+                We use encrypted email and messaging to protect your privacy.
               </p>
             </div>
           </div>
@@ -107,4 +101,3 @@ export function HeroSection() {
     </section>
   );
 }
-

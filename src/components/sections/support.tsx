@@ -5,10 +5,6 @@ import { Button } from "@/components/ui/button";
 import { fadeInUp } from "@/lib/motion";
 
 export function SupportSection() {
-  const copyEmail = () => {
-    navigator.clipboard.writeText("victor@meowmemes.org");
-  };
-
   return (
     <section className="bg-[#f4f4f0] py-[clamp(3.75rem,8vw,6.25rem)] text-black" id="support">
       <div className="mx-auto max-w-4xl px-6 text-center">
@@ -20,35 +16,31 @@ export function SupportSection() {
           variants={fadeInUp}
         >
           <p className="section-label text-black/50">Support us</p>
-          <h2 className="section-heading dark">Fund the next case</h2>
+          <h2 className="section-heading dark">Help us help others</h2>
           <p className="text-base text-black/70">
-            Every dollar goes directly to protecting dissidents—relocation costs, emergency funds, web hosting, and
-            secure communications. We&apos;re privately funded with zero institutional backing. That&apos;s why we can
-            move fast.
+            Your donations go directly to helping people—covering relocation costs, emergency funds, web hosting, and secure communications.
           </p>
           <p className="text-base text-black/70">
-            We operate lean and move fast. Your support helps us scale to more regions and protect more people.
+            We&apos;re a small team and every contribution helps us reach more people.
           </p>
           <Button
-            onClick={copyEmail}
+            asChild
             size="lg"
             className="h-12 rounded-full bg-black px-10 text-xs font-semibold uppercase tracking-[0.4em] text-white hover:bg-black/90"
           >
-            Donate
+            <a href="mailto:victor@meowmemes.org?subject=Donation%20Inquiry">Donate</a>
           </Button>
           <p className="text-sm text-black/60">
-            Have legal, technical, or media skills? Email us:{" "}
-            <Button
-              onClick={copyEmail}
-              className="font-semibold text-black underline decoration-dotted underline-offset-4 bg-transparent border-none p-0 h-auto font-normal text-sm"
+            Have legal, technical, or media skills? We&apos;d love to hear from you:{" "}
+            <a
+              href="mailto:victor@meowmemes.org"
+              className="font-semibold text-black underline decoration-dotted underline-offset-4"
             >
-              contact@dissidentfund.org
-            </Button>
+              victor@meowmemes.org
+            </a>
           </p>
         </motion.div>
       </div>
     </section>
   );
 }
-
-

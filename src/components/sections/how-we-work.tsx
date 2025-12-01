@@ -15,34 +15,30 @@ export function HowWeWorkSection() {
           variants={fadeInUp}
         >
           <p className="section-label text-black/50">How we work</p>
-          <h2 className="section-heading dark">Lean, encrypted, and fast</h2>
+          <h2 className="section-heading dark">Simple and secure</h2>
           <div className="space-y-6 text-base text-black/75">
             <div>
-              <p className="text-xl font-semibold text-black">Speed over process</p>
+              <p className="text-xl font-semibold text-black">We move quickly</p>
               <p>
-                When someone&apos;s life depends on it, bureaucracy kills. We operate lean, verify quickly, and fund
-                immediately.
+                When someone needs help urgently, we don&apos;t make them wait. We verify the situation and provide support as fast as we can.
               </p>
             </div>
             <div>
-              <p className="text-xl font-semibold text-black">Encrypted everything</p>
+              <p className="text-xl font-semibold text-black">We keep things private</p>
               <p>
-                Initial contact happens through ProtonMail with PGP encryption (use an incognito browser). Signal or
-                WhatsApp numbers are only shared after we verify your identity through trusted sources.
+                We use encrypted email (ProtonMail with PGP) and secure messaging apps. We recommend using an incognito browser when contacting us.
               </p>
             </div>
             <div>
-              <p className="text-xl font-semibold text-black">Transparency after safety</p>
+              <p className="text-xl font-semibold text-black">We&apos;re transparent with donors</p>
               <p>
-                Once someone is secure, we share anonymized updates with donors so they know exactly what their money
-                funded.
+                Once someone is safe, we share anonymized updates so donors know how their money was used.
               </p>
             </div>
             <div>
-              <p className="text-xl font-semibold text-black">Private funding only</p>
+              <p className="text-xl font-semibold text-black">We&apos;re independently funded</p>
               <p>
-                Zero government money, zero institutional grants. That freedom lets us move without political
-                constraints or paperwork delays.
+                We don&apos;t take government or institutional money. This keeps us flexible and free from outside influence.
               </p>
             </div>
           </div>
@@ -51,4 +47,3 @@ export function HowWeWorkSection() {
     </section>
   );
 }
-
