@@ -7,19 +7,15 @@ export function SiteHeader() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
-        <a href="#top" className="flex items-center gap-4">
-          <div className="relative size-14 rounded-2xl overflow-hidden bg-white">
-            <Image
-              src="/logo.png"
-              alt="Dissident Fund"
-              width={56}
-              height={56}
-              className="object-contain"
-            />
-          </div>
-          <span className="text-base font-semibold uppercase tracking-[0.15em] text-white hidden sm:block">
-            Dissident Fund
-          </span>
+        <a href="#top" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Dissident Fund"
+            width={140}
+            height={140}
+            className="invert brightness-0 invert"
+            style={{ filter: "invert(1)" }}
+          />
         </a>
         <Button
           asChild
