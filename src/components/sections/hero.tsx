@@ -8,7 +8,7 @@ import { fadeInUp, staggerContainer } from "@/lib/motion";
 export function HeroSection() {
   return (
     <section
-      className="relative isolate min-h-[620px] overflow-hidden bg-black px-6 pt-24 pb-[clamp(3.75rem,8vw,6.25rem)] text-white sm:px-10"
+      className="relative isolate min-h-[620px] overflow-hidden bg-black px-6 pt-28 pb-[clamp(3.75rem,8vw,6.25rem)] text-white sm:px-10"
       id="top"
     >
       <div

@@ -3,14 +3,14 @@ import { Button } from "@/components/ui/button";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-white/10 bg-black px-6 py-12 text-sm text-white/70">
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 text-center">
-        <div className="relative size-16 rounded-full overflow-hidden bg-white">
+    <footer className="border-t border-white/10 bg-black px-6 py-16 text-sm text-white/70">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8 text-center">
+        <div className="relative size-24 rounded-2xl overflow-hidden bg-white">
           <Image
             src="/logo.png"
             alt="Dissident Fund"
-            width={64}
-            height={64}
+            width={96}
+            height={96}
             className="object-contain"
           />
         </div>
