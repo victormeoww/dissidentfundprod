@@ -1,4 +1,5 @@
 import { SiteFooter } from "@/components/footer";
+import { SiteHeader } from "@/components/header";
 import { ContactSection } from "@/components/sections/contact";
 import { HeroSection } from "@/components/sections/hero";
 import { HowWeWorkSection } from "@/components/sections/how-we-work";
@@ -10,6 +11,7 @@ import { WhoWeHelpSection } from "@/components/sections/who-we-help";
 export default function Home() {
   return (
     <main className="bg-black text-white">
+      <SiteHeader />
       <HeroSection />
       <WhatWeDoSection />
       <WhoWeHelpSection />

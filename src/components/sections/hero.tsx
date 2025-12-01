@@ -8,7 +8,7 @@ import { fadeInUp, staggerContainer } from "@/lib/motion";
 export function HeroSection() {
   return (
     <section
-      className="relative isolate min-h-[620px] overflow-hidden bg-black px-6 py-[clamp(3.75rem,8vw,6.25rem)] text-white sm:px-10"
+      className="relative isolate min-h-[620px] overflow-hidden bg-black px-6 pt-24 pb-[clamp(3.75rem,8vw,6.25rem)] text-white sm:px-10"
       id="top"
     >
       <div
@@ -28,9 +28,6 @@ export function HeroSection() {
         animate="show"
       >
         <motion.div className="space-y-6" variants={fadeInUp}>
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-white/70">
-            Dissident Fund
-          </p>
           <h1 className="text-balance text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] sm:max-w-[700px]">
             Direct support for dissidents in Iran, Russia, China, and Latin America.
           </h1>
