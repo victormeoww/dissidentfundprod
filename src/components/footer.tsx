@@ -5,13 +5,15 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-white/10 bg-black px-6 py-12 text-sm text-white/70">
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 text-center">
-        <Image
-          src="/logo.png"
-          alt="Dissident Fund"
-          width={60}
-          height={60}
-          className="invert opacity-80"
-        />
+        <div className="relative size-16 rounded-full overflow-hidden bg-white">
+          <Image
+            src="/logo.png"
+            alt="Dissident Fund"
+            width={64}
+            height={64}
+            className="object-contain"
+          />
+        </div>
         <Button
           asChild
           className="text-white underline decoration-dotted underline-offset-4 hover:text-white/80 bg-transparent border-none p-0 h-auto font-normal text-sm"
