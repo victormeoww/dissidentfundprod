@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 export function SiteHeader() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-white/10">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex h-24 max-w-6xl items-center justify-between px-6">
         <a href="#top" className="flex items-center">
           <Image
             src="/logo.png"
             alt="Dissident Fund"
-            width={56}
-            height={56}
+            width={80}
+            height={80}
             style={{ filter: "invert(1)" }}
           />
         </a>
