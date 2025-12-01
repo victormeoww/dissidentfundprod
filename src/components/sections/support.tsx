@@ -1,6 +1,5 @@
 "use client";
 
-// lil jit was here
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { fadeInUp } from "@/lib/motion";
@@ -32,13 +31,13 @@ export function SupportSection() {
             <a href="mailto:victor@meowmemes.org?subject=Donation%20Inquiry">Donate</a>
           </Button>
           <p className="text-sm text-black/60">
-            Have legal, technical, or media skills? We&apos;d love to hear from you:{" "}
-            <a
-              href="mailto:victor@meowmemes.org"
-              className="font-semibold text-black underline decoration-dotted underline-offset-4"
+            Have legal, technical, or media skills?{" "}
+            <Button
+              asChild
+              className="font-semibold text-black underline decoration-dotted underline-offset-4 bg-transparent border-none p-0 h-auto text-sm"
             >
-              victor@meowmemes.org
-            </a>
+              <a href="mailto:victor@meowmemes.org">Get in touch</a>
+            </Button>
           </p>
         </motion.div>
       </div>

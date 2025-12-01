@@ -20,16 +20,6 @@ export function ContactSection() {
           <p>
             If you need assistance, reach out to us. All communications are kept confidential.
           </p>
-          <div className="space-y-3 rounded-2xl border border-white/15 bg-black/40 p-6 text-white/80">
-            <p className="text-sm uppercase tracking-[0.35em] text-white/60">Email</p>
-            <a
-              href="mailto:victor@meowmemes.org"
-              className="text-lg font-semibold text-white underline decoration-dotted underline-offset-4 hover:text-white/80"
-            >
-              victor@meowmemes.org
-            </a>
-            <p>For extra security, use ProtonMail with PGP encryption and an incognito browser.</p>
-          </div>
           <div className="rounded-2xl border border-white/15 bg-black/40 p-6 text-white/80">
             <p className="text-sm uppercase tracking-[0.35em] text-white/60">What to include</p>
             <ol className="mt-4 space-y-3 text-sm">
@@ -39,6 +29,9 @@ export function ContactSection() {
             </ol>
             <p className="mt-4 text-sm text-white/70">We can share Signal or WhatsApp contact info after we verify your identity.</p>
           </div>
+          <p className="text-sm text-white/60">
+            For extra security, use ProtonMail with PGP encryption and an incognito browser.
+          </p>
           <Button
             asChild
             className="h-12 w-full rounded-full bg-white text-xs font-semibold uppercase tracking-[0.4em] text-black hover:bg-white/90"

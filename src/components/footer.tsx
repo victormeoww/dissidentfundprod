@@ -8,7 +8,7 @@ export function SiteFooter() {
           asChild
           className="text-white underline decoration-dotted underline-offset-4 hover:text-white/80 bg-transparent border-none p-0 h-auto font-normal text-sm"
         >
-          <a href="mailto:victor@meowmemes.org">victor@meowmemes.org</a>
+          <a href="mailto:victor@meowmemes.org">Contact us</a>
         </Button>
         <p>© 2025 Dissident Fund</p>
       </div>
